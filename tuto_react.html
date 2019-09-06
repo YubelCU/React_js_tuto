@@ -18,6 +18,20 @@ https://fr.reactjs.org/docs/introducing-jsx.html-->
 
 <script type="text/babel">
 
+  class Human extends React.Component {
+    render() {
+      return (
+        <div>
+          <p> Hello, world !</p>
+        </div>
+      );
+    }
+  }
+  ReactDOM.render(
+    <Human />,
+    document.getElementById('root')
+  );
+
   const hw = "Hello World"
   const element = <div>{hw}</div>
   ReactDOM.render(
